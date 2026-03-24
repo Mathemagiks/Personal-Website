@@ -7,19 +7,97 @@ body {
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+body, html {
+    height: 100%;
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ 
+body {
+  background: #333;
+}
+ 
+/*.pic {
+  border: 10px solid #fff;  
+  float: left;
+  height: 600px;
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+  
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+}*/
+.pic{
+    overflow: hidden;
+}
+/*.grow img {
+  height: 600px;
+  width: 200px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.grow img:hover {
+  width: 400px;
+  height: 700px;
+}*/
+.parallax {
+    /* The image used */
+    background-image: url('../images/2s.jpg');
 
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+#color-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   opacity: 0.6;
+}
 .text-vertical-center {
-    display: table-cell;
     text-align: right;
     /*vertical-align: middle;*/
     color: #fff;
+    
+}
+section#art{ padding-top:200px;
+    padding-bottom:200px;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14em;
+    font-weight:800;
+
+
 }
 
 .text-vertical-center h1 {
     margin-top: 50px;
     margin-right: 50px;
     padding-top: 50px;
-    font-size: 4.5em;
+    font-size: 5.0em;
     font-weight: 700;
     color: #fff;
 }
@@ -35,13 +113,42 @@ body {
 .text-vertical-center a:link{
     text-decoration: none;
 color: #fff;
-font-size: 2.0em;
+font-size: 2.7em;
 }
 /*.text-vertical-center a:visited {
     color: #2F3034;
 }*/
 .text-vertical-center a:hover {
     color: #2F3034;
+}
+section#tri{
+    
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 90px 40px 0 40px;
+border-color: #ffffff transparent transparent transparent;
+text-align: center;
+top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+margin-bottom: 200px;
+cursor:pointer;
+    
+}
+section#triangle{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 40px 90px 40px;
+border-color: transparent transparent #ffffff transparent;
+top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+margin-bottom: 100px;
+cursor:pointer;
 }
 
 .text-vertical-center a {
@@ -55,12 +162,13 @@ font-size: 2.0em;
 }
 .text-vertical-center p {
     padding-right:50px;
+    font-size:15px;
 }
 .text-vertical-center h3 {
     margin-right: 50px;
     margin-top: 30px;
     margin-bottom:30px;
-    font-size: 3.5em;
+    font-size: 4.5em;
     font-weight: 700;
 }
 #content{
@@ -69,12 +177,116 @@ font-size: 2.0em;
     margin-bottom: 100px;
     margin-right:300px;
     margin-left: 300px;
-    background-color: #f1f1f1;
+    background-color: #fff;
     text-align: center;
     color: #333;
     vertical-align: middle;
 
 }
+#cats{
+    padding: 50px;
+   
+    background-color: #f1f1f1;
+    
+    color: #333;
+    vertical-align: middle;
+
+}
+#cats {
+    width: 50%;
+    height: 600px;
+    background-image: url('../images/tree_house.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    
+}
+#cat {
+    width: 50%;
+    height: 600px;
+    background-image:url('../images/Pages_Dress.jpg');
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+    -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+
+    
+}
+/*#cat:hover{
+    width: 50%;
+  height: 800px;
+}*/
+#intro {
+  position: fixed;
+  top: 48%;
+  left: 10%;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+div#fuss h1{
+    font-size: 3.50em;
+    font-weight: 700;
+    color:#333;
+    margin-left:50px;
+    margin-top: 0px;
+    padding-top:30px;
+
+}
+div#fuss p{
+    text-align: justify;
+    padding-right: 30px;
+}
+div#fussy h1{
+    font-size: 2.50em;
+    font-weight: 700;
+    color:#333;
+    margin-left:50px;
+    margin-top: 0px;
+    padding-top:30px;
+
+}
+div#fussy p{
+    text-align: justify;
+    padding-right: 30px;
+}
+#jig-saw{
+    text-align: center;
+    font-size: 3em;
+    color:#333;
+
+}
+a#jig-saw:hover{
+    color:#9a1818;
+}
+#dress{
+    text-align: center;
+    font-size: 3em;
+    color:#333;
+
+}
+a#dress:hover{
+    color:#a39468;
+}
+/*.image-container{
+  height: 100%; // doesn't have to be '%' can also use 'px'
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  background-image: url('../pages_house/DSC_8439.JPG');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}*/
 div#content h2{
     font-size: 4.50em;
     font-weight: 700;
@@ -83,6 +295,7 @@ div#content h2{
 }
 div#content p{
     font-size: 1.50em;
+    margin-left:30px;
 
 }
 #bio{padding: 30px;
@@ -103,9 +316,14 @@ div#bio h2{
     text-align: center;
 }
 div#bio p{
-    font-size: 1.75em;
-    text-align: left;
+    font-size: 1.5em;
+    text-align: justify;
     padding-left: 50px;
+
+}
+div#bio p.wood{
+    
+    padding-bottom: 60px;
 
 }
 /* Custom Button Styles */
@@ -145,7 +363,7 @@ div#bio p{
     right: 0;
     width: 250px;
     height: 100%;
-    transform: translateX(250px);
+    transform: translate(250px,-100px);
     overflow-y: auto;
     background: #222;
     -webkit-transition: all 0.4s ease 0s;
@@ -154,7 +372,16 @@ div#bio p{
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+#sidebar-wrapper.up{
+    transform: translate(250px,0px);
+    height:100%;
 
+}
+#sidebar-wrapper.high{
+    transform: translate(250px,-50px);
+    height:100%;
+
+}
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -229,7 +456,7 @@ div#bio p{
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../images/2g.jpg) no-repeat center center scroll;
+    background: url(../images/2s.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -305,8 +532,8 @@ div#bio p{
     width: 0;
     position: fixed;
     z-index: 1;
-    /*top: 0;
-    left: 0;*/
+    top: 0;
+    /*left: 0;*/
     /*background-color: rgb(153,153,153);*/
     background-color: rgba(47,48,52, 0.98);
     overflow-x: hidden;
@@ -417,4 +644,249 @@ div#bio p{
     font-size: 40px;
     font-weight: 500;
     padding-top: 20px;
+}
+div#content{
+        padding:30px;
+        margin-left:300px;
+        margin-right:300px;
+    }
+@media only screen and (max-width: 800px) {
+    section#tri{
+        display:none;
+    }
+}
+@media only screen and (max-width: 800px) {
+    section#triangle{
+        display:none;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1517px ) and (min-width:1280px) {
+    div#content{
+        padding:30px;
+        margin-left:200px;
+        margin-right:200px;
+    }
+}
+@media only screen and (max-width: 1517px) and ( min-width: 1315px) {
+    div#bio{
+        padding:20px;
+        margin-left:200px;
+        margin-right:200px;
+    }
+}
+@media only screen and (max-width: 1522px) {
+    div#bio{
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+   }
+}
+@media only screen and (max-width: 1279px) {
+    div#bio{
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+   }
+}
+@media only screen and (max-width: 1315px ) {
+    div#content{
+        padding:30px;
+        margin-left:100px;
+        margin-right:100px;
+    }
+}
+@media only screen and (max-width: 1315px) and ( min-width: 1315px) {
+    div#bio{
+        padding:20px;
+        margin-left:200px;
+        margin-right:200px;
+    }
+}
+@media only screen and (max-width: 1035px) {
+    .text-vertical-center p{
+        padding-right:20px;
+    }
+}
+@media only screen and (max-width: 1035px) {
+    div#bio p{
+        padding-left:20px;
+    }
+}
+@media only screen and (max-width: 1035px) {
+    div#fuss p{
+        padding-right:10px;
+    }
+}
+@media only screen and (max-width: 1035px) {
+    div#fussy p{
+        padding-right:10px;
+    }
+}
+@media only screen and (max-width: 1035px) {
+    div#content p{
+        padding-left:10px;
+        margin-right:10px;
+    }
+}
+@media only screen and (max-width: 1035px) {
+    div#bio{
+        padding:30px;
+        margin-left:60px;
+        margin-right:60px;
+    }
+}
+@media only screen and (max-width: 1522px) {
+    section#art{
+        padding-bottom:200px;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    section#art{
+        padding-bottom:100px;
+    }
+}
+@media only screen and (max-width: 1035px) {
+    div#bio p{
+        padding-left:20px;
+    }
+}
+@media only screen and (max-width: 1035px) {
+    div#content{
+        padding:30px;
+        margin-left:100px;
+        margin-right:100px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div#content{
+        padding:20px;
+        margin-left:100px;
+        margin-right:100px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    div#bio{
+        padding:20px;
+        margin-left:20px;
+        margin-right:20px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #cat{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #cats{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #fuss{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #fussy{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 540px) {
+    div#bio p{
+        padding-left:5px;
+        padding-right: 5px;
+    }
+}
+@media only screen and (max-width: 540px){
+div#content p {
+    margin-left: 10px;
+   }
+}
+@media only screen and (max-width: 1280px){
+.sidebar-nav li a{
+    font-size: 20px;
+   }
+}
+
+@media only screen and (max-width: 540px)  {
+    #cats{
+        height:400px;
+    }
+}
+@media only screen and (max-width: 400px)  {
+    #cats{
+        height:350px;
+    }
+}
+@media only screen and (max-width: 400px )  {
+    div#content p{
+        padding-left:1px;
+        margin-left:1px;
+        margin-right:1px;
+        padding-right: 1px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    section#art{
+        padding-bottom:100px;
+        font-size: 8em;
+
+    }
+}
+@media only screen and (max-width: 400px) {
+    div#fuss h1{
+        font-size: 2.5em;
+        margin-left:25px;
+        margin-right: 25px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    div#fussy h1{
+        font-size: 2.5em;
+        margin-left:25px;
+        margin-right: 25px;
+    }
+}
+@media only screen and (max-width: 400px){
+  div#content{
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+   }
+}
+@media only screen and (max-width: 400px) {
+    div#bio{
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+   }
+}
+
+
+@media only screen and (max-width: 400px )  {
+    div#bio p{
+        padding-left:15px;
+        margin-left:1px;
+        margin-right:1px;
+        padding-right: 15px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    div#fuss h1{
+        font-size: 2.5em;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    div#fussy h1{
+        font-size: 2.5em;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
