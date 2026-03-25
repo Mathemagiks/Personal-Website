@@ -35,6 +35,28 @@ body {
 .pic{
     overflow: hidden;
 }
+.film-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.05em;
+  letter-spacing: 0.03em;
+  opacity: 0.95;
+}
+.film-title-2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.08em;
+  letter-spacing: 0.04em;
+}
+.contact-line {
+  margin-top: 1.5rem;
+  font-size: 1.05em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
 /*.grow img {
   height: 600px;
   width: 200px;
@@ -104,7 +126,7 @@ section#art{ padding-top:200px;
 .text-vertical-center a {
         text-align: right;
         color:#fff;
-    text-decoration: none,
+    text-decoration: none;
     margin-right: 50;
     padding-right: 50;
     font-size: 1.75em;
@@ -154,7 +176,7 @@ cursor:pointer;
 .text-vertical-center a {
         text-align: right;
         color:#fff;
-    text-decoration: none,
+    text-decoration: none;
     margin-right: 50;
     padding-right: 50;
     font-size: 2.0em;
@@ -170,6 +192,13 @@ cursor:pointer;
     margin-bottom:30px;
     font-size: 4.5em;
     font-weight: 700;
+}
+.text-vertical-center h4 {
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    font-size: 2.5em;
+    font-weight: 500;
 }
 #content{
     padding: 50px;
@@ -324,6 +353,12 @@ div#bio p{
 div#bio p.wood{
     
     padding-bottom: 60px;
+    text-align: center
+
+}
+div#bio p.wood2{
+    padding-top: 60px;
+    text-align: center
 
 }
 /* Custom Button Styles */
